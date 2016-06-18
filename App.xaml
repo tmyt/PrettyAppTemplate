@@ -1,0 +1,33 @@
+﻿<Application
+    x:Class="$safeprojectname$.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:$safeprojectname$"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Theme Resources -->
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <!-- Colors -->
+                    <Color x:Key="ForegroundColor">#FF000000</Color>
+                    <Color x:Key="BackgroundColor">#FFF0F0F0</Color>
+                    <Color x:Key="AccentColor">#FF5D639E</Color>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <!-- Colors -->
+                    <Color x:Key="ForegroundColor">#FFFFFFFF</Color>
+                    <Color x:Key="BackgroundColor">#FF1C1C1C</Color>
+                    <Color x:Key="AccentColor">#FF0086AB</Color>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <!-- Common Resources -->
+            <!-- Brushes -->
+            <SolidColorBrush x:Key="ForegroundColorBrush" Color="{StaticResource ForegroundColor}" />
+            <SolidColorBrush x:Key="BackgroundColorBrush" Color="{StaticResource BackgroundColor}" />
+            <SolidColorBrush x:Key="AccentColorBrush" Color="{StaticResource AccentColor}" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
